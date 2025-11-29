@@ -1,0 +1,82 @@
+{
+  "project_info": {
+    "project_number": "606774801473",
+    "project_id": "yolo-d90ce",
+    "storage_bucket": "yolo-d90ce.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:606774801473:android:b4363db5fd356a4f30c2c0",
+        "android_client_info": {
+          "package_name": "com.example.yolo"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "606774801473-j31gjv5an8k0skvdes2r2sqhls5lop9e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBhmFwJkpaVtgU4C3LglFazdPA0cnuFQ3A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "606774801473-j31gjv5an8k0skvdes2r2sqhls5lop9e.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "606774801473-q6lo9ai7s7bsq3ktipid29mk78rrb07n.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.yolo"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:606774801473:android:c3d3f377cc7e7c5e30c2c0",
+        "android_client_info": {
+          "package_name": "com.yolo.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "606774801473-j31gjv5an8k0skvdes2r2sqhls5lop9e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBhmFwJkpaVtgU4C3LglFazdPA0cnuFQ3A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "606774801473-j31gjv5an8k0skvdes2r2sqhls5lop9e.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "606774801473-q6lo9ai7s7bsq3ktipid29mk78rrb07n.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.yolo"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
