@@ -50,7 +50,8 @@ class ParisEventService {
               allEvents.add(event);
             }
           } catch (e) {
-            // Ignore les événements mal formés
+            // Ignore les événements mal formés (logging possible en debug)
+            // print('Erreur parsing événement: $e');
             continue;
           }
         }
@@ -62,7 +63,8 @@ class ParisEventService {
           hasMore = false;
         }
       } catch (e) {
-        // En cas d'erreur, on arrête et retourne ce qu'on a déjà
+        // En cas d'erreur réseau ou parsing, on arrête et retourne ce qu'on a déjà
+        // print('Erreur lors de la récupération des événements: $e');
         hasMore = false;
       }
     }
@@ -85,7 +87,8 @@ class ParisEventService {
       }
       
       final endDate = DateTime.parse(endDateStr);
-      if (endDate.isBefore(now)) {
+      // Garde uniquement les événements dont la date de fin est strictement supérieure à maintenant
+      if (!endDate.isAfter(now)) {
         return false;
       }
 
@@ -110,6 +113,8 @@ class ParisEventService {
   }
 
   /// Méthode de compatibilité (retourne ExternalEvent au lieu de EventModel)
+  /// Note: Le paramètre `reset` n'est plus utilisé car fetchAllEvents() récupère
+  /// toujours toutes les données depuis le début
   Future<List<ExternalEvent>> fetchEvents({bool reset = false}) async {
     // Cette méthode appelle maintenant fetchAllEvents pour avoir toutes les données
     return await fetchAllEvents();
